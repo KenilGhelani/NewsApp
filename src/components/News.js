@@ -105,7 +105,7 @@ export class News extends Component {
     console.log("Render");
     return (
       <div className="container">
-        <h1 className="text-center my-4">NewsApp - Top Headlines From  {(this.props.category).charAt(0).toUpperCase()+this.props.category.slice(1)}</h1>
+        <h1 className="text-center my-4">NewsApp - Top {(this.props.category).charAt(0).toUpperCase()+this.props.category.slice(1)} Headlines</h1>
         {this.state.loading && <Spinner />}
         <div className="row">
           {!this.state.loading &&
